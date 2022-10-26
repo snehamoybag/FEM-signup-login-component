@@ -1,0 +1,103 @@
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+}
+
+.main {
+  min-height: 100vh;
+  background-color: var(--clr-primary-400);
+  background-image: url('./images/bg-intro-mobile.png');
+  padding: 6em 1.5em;
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-100);
+  
+  &--header {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    & h1 {
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-900);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    
+    & p {
+      opacity: 0.85;
+    }
+  }
+}
+
+.sec-signup-form {
+  
+  & h2 {
+    background-color: var(--clr-accent-400);
+    text-align: center;
+    padding: 1em 3em;
+    margin-bottom: 1.5rem;
+  }
+  
+  & span {
+    opacity: 0.85;
+  }
+}
+
+.signup-form {
+  background-color: var(--clr-neutral-100);
+  padding: 1.5em;
+  
+  & input {
+    font-size: var(--fs-300);
+    color: var(--clr-neutral-600);
+    padding: 1.15em;
+    border: 0.5px solid currentColor;
+  }
+  
+  & input::placeholder {
+    font-weight: var(--fw-semi-bold);
+  }
+  
+  & input:hover,
+  & input:focus {
+    color: var(--clr-neutral-700);
+    font-weight: var(--fw-medium);
+    outline: 0.5px solid currentColor;
+  }
+  
+  & input,
+  & button[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: var(--fs-300);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  & p {
+    font-size: var(--fs-200);
+    text-align: center;
+    padding: 0 1em;
+  }
+  
+  & a:visited {
+    color: var(--clr-neutral-700);
+  }
+}
+
+footer {
+  background-color: var(--clr-neutral-700);
+  padding: 3em 2em;
+  
+  & .attribution {
+    color: var(--clr-neutral-100);
+    font-size: var(--fs-300);
+    word-break: normal;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 1.8;
+    
+    & a:visited {
+      color: var(--clr-accent-400);
+    }
+  }
+}

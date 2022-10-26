@@ -11,37 +11,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- SCRIPTS -->
+    <script type="module" src="js/main.js"></script>
 </head>
 <body>
   <header></header>
-  <div class="layout-wrapper">
-    <main>
-      <header class="main--header">
-        <h1>Learn to code by watching others</h1>
-        <p>
-          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
-        </p>
-      </header>
-      <section class="signup-form">
-        <h2>Try it free 7 days <span class="light-text">then $20/mo. thereafter</span></h2>
-        <form action="#" method="GET">
-          <input type="text" name="first-name" id="first-name" placeholder="First Name" aria-label="Enter your first name">
-          <input type="text" name="last-name" id="last-name" placeholder="First Name" aria-label="Enter your last name">
-          <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter your email address">
-          <input type="password" name="password" id="password" placeholder="Password" aria-label="Create a login password">
-          <button type="submit">Claim your free trial</button>
-          <p class="terms-conditions">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
-        </form>
-      </section>
-    </main>
-  </div>
+  <main class="main">
+    <header class="main--header">
+      <h1 class="fw-bold">Learn to code by watching others</h1>
+      <p class="fw-medium">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+      </p>
+    </header>
+    <section class="sec-signup-form">
+      <h2 class="fw-semi-bold rounded-corners box-shadow">Try it free 7 days <span class="fw-regular">then $20/mo. thereafter</span></h2>
+      <form class="signup-form rounded-corners box-shadow" action="#" method="GET">
+        <input type="text" name="first-name" id="first-name" placeholder="First Name" aria-label="Enter your first name" required>
+        <span class="invalid-msg clr-primary-400"></span>
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name" aria-label="Enter your last name" required>
+        <span class="invalid-msg clr-primary-400"></span>
+        <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter your email address" required>
+        <span class="invalid-msg clr-primary-400"></span>
+        <input type="password" name="password" id="password" placeholder="Password" aria-label="Create a login password" required>
+        <span class="invalid-msg clr-primary-400"></span>
+        <button class="btn-primary bg-secondary-400 fw-semi-bold" id="btn-submit" type="submit">Claim your free trial</button>
+        <p class="clr-neutral-400">By clicking the button, you are agreeing to our <a class="clr-primary-400 fw-semi-bold" href="#">Terms and Services</a></p>
+      </form>
+    </section>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Snehamoy Bag</a>.
+      Coded by <a href="http://localhost:5173/">Snehamoy Bag</a>.
     </p>
   </footer>
-  <!-- SCRIPTS -->
-  <script type="module" src="js/main.js"></script>
 </body>
 </html>

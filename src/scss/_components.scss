@@ -1,0 +1,94 @@
+// CUSTOM PROPERTIES 
+:root {
+  --clr-primary-400: hsl(0, 100%, 74%);
+  
+  --clr-secondary-300: hsl(154, 100%, 65%);
+  --clr-secondary-400: hsl(154, 59%, 51%);
+  
+  --clr-accent-400: hsl(248, 32%, 49%);
+  
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(246, 25%, 77%);
+  --clr-neutral-600: hsl(249, 0%, 45%);
+  --clr-neutral-700: hsl(249, 10%, 26%);
+  --clr-neutral-900: hsl(249, 0%, 0%);
+  
+  --ff-primary: 'Poppins', sans-serif;
+  
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  
+  --fs-200: 3vw;
+  --fs-300: 3.85vw;
+  --fs-400: 4.35vw;
+  --fs-900: 8vw;
+}
+
+// UTILITY CLASSES //
+// font weights
+.fw-regular { font-weight: var(--fw-regular) }
+.fw-medium { font-weight: var(--fw-medium) }
+.fw-semi-bold { font-weight: var(--fw-semi-bold) }
+.fw-bold { font-weight: var(--fw-bold) }
+
+// font colors 
+.clr-primary-400 { color: var(--clr-primary-400); }
+.clr-neutral-400 { color: var(--clr-neutral-400); }
+
+// Background colors 
+.bg-secondary-400 { background-color: var(--clr-secondary-400); }
+
+// card styles
+.rounded-corners { border-radius: 10px; }
+.box-shadow { box-shadow: 0 8.5px 0 hsla(0, 0%, 0%, 0.15); }
+
+// Button styles
+.btn-primary {
+  border: none;
+  text-transform: uppercase;
+  padding: 1em;
+  border-style: outset;
+  border-width: 0 1px 4px;
+  transition: border 200ms ease;
+  
+  &:hover {
+    border-style: inset;
+    border-width: 4px 1px 0;
+  }
+  
+  &:active {
+    opacity: 0.75;
+    transform: scale(95%);
+  }
+  
+  &:focus {
+    outline: 2px dashed;
+    outline-offset: 5px;
+  }
+}
+
+// button text color behavior according to background color
+button[class*="bg-secondary-400"] {
+  color: var(--clr-neutral-100);
+  border-color: var(--clr-secondary-300);
+  
+  &:focus {
+    outline-color: var(--clr-secondary-400);
+  }
+}
+
+// link behavior according to font color
+a {
+  text-decoration: none;
+  
+  &:focus {
+    outline: 1px dashed currentColor;
+    outline-offset: 2px;
+  }
+  
+  &[class*="clr-primary-400"]:hover {
+    color: var(--clr-secondary-400);
+  }
+}
