@@ -1,0 +1,29 @@
+@use 'breakpoints' as *;
+// Controlled by Javascript
+.input-error {
+  position: relative;
+  
+  &::after {
+    content: '';
+    width: 1.5em;
+    aspect-ratio: 1/1;
+    background-color: var(--clr-primary-400);
+    background-image: url('./images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    z-index: 1;
+  }
+  input {
+    color: var(--clr-primary-400);
+    padding-right: 18%;
+    
+    &::placeholder {
+      color: var(--clr-primary-400);
+      opacity: 0; // hides placeholder text when error
+    }
+  }
+}
