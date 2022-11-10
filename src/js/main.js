@@ -1,7 +1,7 @@
-"use strict"
 // CSS STYLESHEET
 import "../scss/style.scss";
 
+"use strict";
 // JAVASCRIPT
 // Form elements
 const signupFormEl = document.querySelector("#signup-form");
