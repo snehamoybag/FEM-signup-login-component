@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS + JAVASCRIPT -->
+    
+  <script type="module" crossorigin src="/assets/index.e2b7ec95.js"></script>
+  <link rel="stylesheet" href="/assets/index.6c8dc933.css">
+</head>
+<body>
+  <header></header>
+  <main class="main">
+    <div class="main--wrapper">
+      <header class="main--header">
+        <h1 class="fw-bold">Learn to code by watching others</h1>
+        <p class="fw-medium">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+        </p>
+      </header>
+      <section class="sec-signup-form">
+        <h2 class="fw-semi-bold rounded-corners box-shadow">Try it free 7 days <span class="fw-regular">then $20/mo. thereafter</span></h2>
+        <form class="signup-form rounded-corners box-shadow" id="signup-form" action="/" method="GET">
+          <label for="first-name">
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" aria-label="Enter your first name" required>
+            <span class="invalid-msg"></span>
+          </label>
+          <label for="last-name">
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" aria-label="Enter your last name" required>
+            <span class="invalid-msg"></span>
+          </label>
+          <label for="email">
+            <input type="email" name="email" id="email" placeholder="Email Address" aria-label="Enter your email address" required>
+            <span class="invalid-msg"></span>
+          </label>
+          <label for="password">
+            <input type="password" name="password" id="password" placeholder="Password" aria-label="Create a login password" required>
+            <span class="invalid-msg"></span>
+          </label>
+          <button class="btn-primary bg-secondary-400 fw-semi-bold" id="btn-submit" type="submit">Claim your free trial</button>
+          <p class="clr-neutral-400">By clicking the button, you are agreeing to our <a class="clr-primary-400 fw-semi-bold" href="#">Terms and Services</a></p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a class="clr-primary-400 fw-medium" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a class="clr-primary-400 fw-medium" href="http://localhost:5173/">Snehamoy Bag</a>.
+    </p>
+  </footer>
+</body>
+</html>
