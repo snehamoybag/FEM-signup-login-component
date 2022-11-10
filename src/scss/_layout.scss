@@ -8,7 +8,7 @@ body {
 .main {
   min-height: 100vh;
   background-color: var(--clr-primary-400);
-  background-image: url('./images/bg-intro-mobile.png');
+  background-image: url('/images/bg-intro-mobile.png');
   padding: 6em 1.5em;
   font-size: var(--fs-400);
   color: var(--clr-neutral-100);
@@ -17,7 +17,7 @@ body {
   align-items: center;
   
   @include minWidth(large) {
-    background-image: url('./images/bg-intro-desktop.png');
+    background-image: url('/images/bg-intro-desktop.png');
     padding: 0 2.5em;
   }
   
