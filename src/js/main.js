@@ -33,21 +33,27 @@ function InputValidator(element, elName, elRegex, minLength, maxLength) {
       // validation
       if (element.value === "" || element.value === null) {
         errMsg.textContent = `${elName} cannot be empty`;
+        element.parentElement.classList.add("input-error");
       }
       else if (regex.whitespace.test(element.value)) {
         errMsg.textContent = `${elName} cannot contain any white space`;
+        element.parentElement.classList.add("input-error");
       }
       else if (element.value.length < minLength) {
         errMsg.textContent = `${elName} has to be atleast ${minLength} characters long`;
+        element.parentElement.classList.add("input-error");
       }
       else if (element.value.length > maxLength) {
         errMsg.textContent = `${elName} cannot be longer than ${maxLength} characters`
+        element.parentElement.classList.add("input-error");
       }
       else if (!elRegex.test(element.value)) {
         errMsg.textContent = `Looks like this is not a valid ${elName}`;
+        element.parentElement.classList.add("input-error");
       }
       else {
         errMsg.textContent = "";
+        element.parentElement.classList.remove("input-error");
       }
     }
   }
@@ -59,7 +65,7 @@ const lastNameObj = InputValidator(inptLastNameEl, "Last Name", regex.name, 2, 6
 const emailObj = InputValidator(inptEmailEl, "Email", regex.email, 3, 320);
 const passwordObj = InputValidator(inptPasswordEl, "Password", regex.password, 8, 48);
 
-// Doing live validation
+// Doing live form validation
 inptFirstNameEl.addEventListener("input", () => {
   firstNameObj.validate();
 });
@@ -70,6 +76,14 @@ inptEmailEl.addEventListener("input", () => {
   emailObj.validate();
 });
 inptPasswordEl.addEventListener("input", () => {
+  passwordObj.validate();
+});
+
+// Doing form validation when user clicks submit
+btnSubmitEl.addEventListener("click", () => {
+  firstNameObj.validate();
+  lastNameObj.validate();
+  emailObj.validate();
   passwordObj.validate();
 });
 
